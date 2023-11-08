@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TruTimeZonez
+namespace TruTimeZones
 {
     //WorldTimeZones.CreateWorldTimeZones(".\\world_timezones.csv");
     [Serializable]

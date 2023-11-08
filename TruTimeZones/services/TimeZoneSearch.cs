@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
-namespace TruTimeZonez
+namespace TruTimeZones
 {
     public class TimeZoneSearch
     {
@@ -90,7 +91,7 @@ namespace TruTimeZonez
         public static TruTimeZone CurrentTimeZone()
         {
             TimeZoneInfo tzi = TimeZoneInfo.FindSystemTimeZoneById(TimeZoneInfo.Local.Id);
-            return GetTimeZones().Find(f => f.Id == tzi.Id);
+            return GetTimeZones().First(f => f.Id == tzi.Id);
         }
 
         /// <summary>
@@ -110,9 +111,9 @@ namespace TruTimeZonez
         ///     bool IsDaylightSavingTime
         /// </code>
         /// </returns>
-        public static List<TruTimeZone> GetTimeZones()
+        public static IEnumerable<TruTimeZone> GetTimeZones()
         {
-            return WorldTimeZones.TimeZones;
+            return WorldTimeZones.TimeZones.OrderBy(o=>o.BaseUtcOffset);
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TruTimeZonez
+namespace TruTimeZones
 {
     /// <summary>
     /// With Microsoft issues with Timezones and offsets, this set of classes should resolve this issue.
