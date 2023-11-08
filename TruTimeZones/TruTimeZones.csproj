@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+		    <TargetFrameworks>netstandard2.0;netstandard2.1;net47;net48;net6.0;net7.0</TargetFrameworks>
+    </PropertyGroup>
+
+    <PropertyGroup>
+		    <Authors>Chizl</Authors>
+        <PackageId>TruTimeZones</PackageId>
+        <Company>Chizl.com</Company>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <ApplicationIcon>TruTimeZones.ico</ApplicationIcon>
+        <Copyright>copyright (c) chizl.com 2023</Copyright>
+        <PackageIcon>TruTimeZones.ico</PackageIcon>
+        <PackageTags>timezone-viewer</PackageTags>
+        <FileVersion>23.11.07.22</FileVersion>
+        <AssemblyVersion>23.11.00.00</AssemblyVersion>
+        <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    </PropertyGroup>
+
+		<ItemGroup>
+				<Content Include="TruTimeZones.ico">
+						<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+				</Content>
+		</ItemGroup>
+
+		<ItemGroup>
+				<None Update="TruTimeZones.ico">
+						<Pack>True</Pack>
+						<PackagePath>\</PackagePath>
+				</None>
+		</ItemGroup>
+</Project>
