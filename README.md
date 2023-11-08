@@ -1,4 +1,4 @@
-# ![Logo1](https://github.com/gavin1970/TruTimeZone/blob/master/imgs/TruTimeZones_200.png)
+# ![Logo1](https://github.com/gavin1970/TruTimeZones/blob/master/imgs/TruTimeZones_200.png)
 # TruTimeZones
 
 [![NuGet version (TruTimeZones)](https://img.shields.io/nuget/v/TruTimeZones.svg?style=flat-square)](https://www.nuget.org/packages/TruTimeZones/)
@@ -84,10 +84,10 @@ static void Pause()
 
 ## Links
 
-- [Homepage](http://www.chizl.com/TruTimeZone)
-- [Documentation](http://www.chizl.com/TruTimeZone/help)
-- [NuGet Package](https://www.nuget.org/packages/TruTimeZone)
-- [Release Notes](https://github.com/gavin1970/TruTimeZone/releases)
-- [Contributing Guidelines](https://github.com/gavin1970/TruTimeZone/blob/master/CONTRIBUTING.md)
-- [License](https://github.com/gavin1970/TruTimeZone/blob/master/LICENSE.md)
-- [Stack Overflow](https://stackoverflow.com/questions/tagged/TruTimeZone)
+- [Homepage](http://www.chizl.com/TruTimeZones)
+- [Documentation](http://www.chizl.com/TruTimeZones/help)
+- [NuGet Package](https://www.nuget.org/packages/TruTimeZones)
+- [Release Notes](https://github.com/gavin1970/TruTimeZones/releases)
+- [Contributing Guidelines](https://github.com/gavin1970/TruTimeZones/blob/master/CONTRIBUTING.md)
+- [License](https://github.com/gavin1970/TruTimeZones/blob/master/LICENSE.md)
+- [Stack Overflow](https://stackoverflow.com/questions/tagged/TruTimeZones)
