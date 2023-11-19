@@ -1,8 +1,6 @@
 ﻿using System.Reflection;
 using TruTimeZones;
 
-int i = 1;
-
 TruTimeZone local = TimeZoneSearch.CurrentTimeZone();
 DisplayInfo(local, "Results of: TimeZoneSearch.CurrentTimeZone()");
 
@@ -14,7 +12,8 @@ DisplayInfo(ca, "Results of: SearchById(\"Pacific\", true) <- True = Contains, F
 TruTimeZone hi = TimeZoneSearch.SearchByName("Mumbai", true);
 DisplayInfo(hi, "Results of: SearchByName(\"Mumbai\", true) <- True = Contains, False = Equals");
 
-//Dump the full 141 Timezon list to screen.
+//Dump the full Timezone list to screen.
+int i = 1;
 foreach (TruTimeZone tz in TimeZoneSearch.GetTimeZones())
     Console.WriteLine($"({i++:000})\tId:\t\t{tz.Id}\n-\tDisplayName:\t{tz.DisplayName}");
 
