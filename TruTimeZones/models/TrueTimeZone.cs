@@ -8,7 +8,7 @@ namespace TruTimeZones
     public class TruTimeZone
     {
         internal TruTimeZone(TimeSpan baseUtcOffset, TimeSpan dstUtcOffset, string displayName, 
-                            string daylightName, string id, string standardName, 
+                            string daylightName, string standardName, 
                             bool supportsDaylightSavingTime, bool isDaylightSavingTime)
         {
             //if they don't support DST, both baseUtcOffset and dstUtcOffset will be the same value.
@@ -17,7 +17,8 @@ namespace TruTimeZones
             string disTz = dstUtcOffset.Hours < 0 ? "-" : "+";
             this.DisplayName = $"({disTz}{(isDaylightSavingTime ? dstUtcOffset.ToString(@"hh\:mm") : baseUtcOffset.ToString(@"hh\:mm"))}) {displayName}";
             this.DaylightName = daylightName;
-            this.Id = id;
+            //id changes based on DST vs STD even for timezone that don't support DST.
+            this.Id = isDaylightSavingTime ? daylightName : standardName;
             this.StandardName = standardName;
             this.SupportsDaylightSavingTime = supportsDaylightSavingTime;
             this.IsDaylightSavingTime = isDaylightSavingTime;
