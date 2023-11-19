@@ -43,11 +43,11 @@ DisplayInfo(local, "Results of: TimeZoneSearch.CurrentTimeZone()");
 
 //Search By ID,  True represents to use Contains instead of Equals.
 TruTimeZone ca = TimeZoneSearch.SearchById("Pacific", true);
-DisplayInfo(ca, "Results of: SearchById(\"Pacific\", true) <- True = Contains, False = Equals");
+DisplayInfo(ca, "Results of: SearchById(\"Pacific\", true);
 
 //Search By DisplayName,  True represents to use Contains instead of Equals.
 TruTimeZone hi = TimeZoneSearch.SearchByName("Mumbai", true);
-DisplayInfo(hi, "Results of: SearchByName(\"Mumbai\", true) <- True = Contains, False = Equals");
+DisplayInfo(hi, "Results of: SearchByName(\"Mumbai\", true);
 
 //Dump the full Timezone list to screen.
 int i = 1;
