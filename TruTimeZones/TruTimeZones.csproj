@@ -11,12 +11,12 @@
         <ImplicitUsings>disable</ImplicitUsings>
         <Nullable>disable</Nullable>
         <ApplicationIcon>TruTimeZones.ico</ApplicationIcon>
-        <Copyright>copyright (c) chizl.com 2023</Copyright>
+        <Copyright>© 2023 chizl.com</Copyright>
         <PackageIcon>TruTimeZones.ico</PackageIcon>
         <PackageTags>timezone-viewer</PackageTags>
-        <FileVersion>23.11.08.18</FileVersion>
+        <FileVersion>23.11.19.21</FileVersion>
         <AssemblyVersion>23.11.0.0</AssemblyVersion>
-				<Version>23.0.0.0</Version>
+				<Version>23.11.19.0</Version>
         <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     </PropertyGroup>
 

@@ -3,21 +3,19 @@ using System.Collections.Generic;
 
 namespace TruTimeZones
 {
-    //WorldTimeZones.CreateWorldTimeZones(".\\world_timezones.csv");
     [Serializable]
     internal static class WorldTimeZones
     {
         /// <summary>
-        /// Internal Class creation only.
+        /// Internal Class used to create the "List<TruTimeZone>" below.
+        /// Example use: WorldTimeZones.CreateWorldTimeZones(".\\world_timezones.txt");
         /// </summary>
         /// <param name="filePath"></param>
         //internal static void CreateWorldTimeZones(string filePath)
         //{
         //    if (File.Exists(filePath))
         //        File.Delete(filePath);
-        //    if (File.Exists($"{filePath}.json"))
-        //        File.Delete($"{filePath}.json");
-
+        //
         //    using (StreamWriter writer = new StreamWriter(filePath))
         //    {
         //        foreach (TimeZoneInfo tzi in TimeZoneInfo.GetSystemTimeZones())
@@ -27,11 +25,12 @@ namespace TruTimeZones
         //            end = end > -1 ? end + 1 : end;
         //            string displayName = start > -1 && end > -1 ? tzi.DisplayName.Substring(end, tzi.DisplayName.Length - end).Trim() : tzi.DisplayName;
         //            TimeSpan baseUtcDST = tzi.SupportsDaylightSavingTime ? tzi.BaseUtcOffset.Add(TimeSpan.FromHours(1)) : tzi.BaseUtcOffset;
-
+        //
         //            string curTz = IsDST ? baseUtcDST.ToString() : tzi.BaseUtcOffset.ToString();
         //            displayName = $"({curTz}) {displayName}";
-
-        //            writer.WriteLine($"new TruTimeZone(new TimeSpan({tzi.BaseUtcOffset.Hours}, {tzi.BaseUtcOffset.Minutes}, {tzi.BaseUtcOffset.Seconds}), " +
+        //
+        //            writer.WriteLine($"new TruTimeZone(" +
+        //                $"new TimeSpan({tzi.BaseUtcOffset.Hours}, {tzi.BaseUtcOffset.Minutes}, {tzi.BaseUtcOffset.Seconds}), " +
         //                $"new TimeSpan({baseUtcDST.Hours}, {baseUtcDST.Minutes}, {baseUtcDST.Seconds}), " +
         //                $"\"{displayName.Trim()}\", " +
         //                $"\"{tzi.DaylightName}\", " +
@@ -41,6 +40,7 @@ namespace TruTimeZones
         //        }
         //    }
         //}
+
         /// <summary>
         /// DST changes for all zones at the same time as long as they 
         /// support DST, so pulling DST from local will be the same for all TimeZones.
@@ -54,7 +54,7 @@ namespace TruTimeZones
         }
         internal static List<TruTimeZone> TimeZones { get; } = new List<TruTimeZone>()
         {
-            new TruTimeZone(new TimeSpan(-12,00,00), new TimeSpan(-12,00,00), "International Date Line West", "Dateline Daylight Time", "Dateline Standard Time", "Dateline Standard Time", false, IsDST),
+            new TruTimeZone(new TimeSpan(-12, 0, 0), new TimeSpan(-12, 0, 0), "International Date Line West", "Dateline Daylight Time", "Dateline Standard Time", "Dateline Standard Time", false, IsDST),
             new TruTimeZone(new TimeSpan(-11, 0, 0), new TimeSpan(-11, 0, 0), "Coordinated Universal Time-11", "UTC-11", "UTC-11", "UTC-11", false, IsDST),
             new TruTimeZone(new TimeSpan(-10, 0, 0), new TimeSpan(-9, 0, 0), "Aleutian Islands", "Aleutian Daylight Time", "Aleutian Standard Time", "Aleutian Standard Time", true, IsDST),
             new TruTimeZone(new TimeSpan(-10, 0, 0), new TimeSpan(-10, 0, 0), "Hawaii", "Hawaiian Daylight Time", "Hawaiian Standard Time", "Hawaiian Standard Time", false, IsDST),
