@@ -1,10 +1,10 @@
-# ![Logo1](https://github.com/gavin1970/TruTimeZones/blob/master/imgs/TruTimeZones_200.png)
+# ![Logo1](https://github.com/gavin1970/TruTimeZones/blob/master/imgs/TruTimeZones_200.png?raw=true)
 # TruTimeZones
 
 [![NuGet version (TruTimeZones)](https://img.shields.io/nuget/v/TruTimeZones.svg?style=flat-square)](https://www.nuget.org/packages/TruTimeZones/)
 
 TruTimeZones is a popular TimeZone library to resolve Microsoft's glitch in Timezone's during DST.
-It's very lightweight library to use that comes with a .NET6 demo console.
+It's a very lightweight library to use and comes with a .NET6 demo console.
 
 ## Build with
 - Visual Studio 2022 Professional
@@ -45,11 +45,11 @@ DisplayInfo(local, "Results of: TimeZoneSearch.CurrentTimeZone()");
 
 //Search By ID,  True represents to use Contains instead of Equals.
 TruTimeZone ca = TimeZoneSearch.SearchById("Pacific", true);
-DisplayInfo(ca, "Results of: SearchById(\"Pacific\", true) <- True = Contains, False = Equals");
+DisplayInfo(ca, "Results of: SearchById(\"Pacific\", true);
 
 //Search By DisplayName,  True represents to use Contains instead of Equals.
 TruTimeZone hi = TimeZoneSearch.SearchByName("Mumbai", true);
-DisplayInfo(hi, "Results of: SearchByName(\"Mumbai\", true) <- True = Contains, False = Equals");
+DisplayInfo(hi, "Results of: SearchByName(\"Mumbai\", true);
 
 //Dump the full 141 Timezon list to screen.
 foreach (TruTimeZone tz in TimeZoneSearch.GetTimeZones())
