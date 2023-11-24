@@ -1,7 +1,7 @@
 # ![Logo1](https://github.com/gavin1970/TruTimeZones/blob/master/imgs/TruTimeZones_200.png?raw=true)
 # TruTimeZones
 
-[![NuGet version (TruTimeZones)](https://img.shields.io/nuget/v/TruTimeZones.svg?style=flat-square)](https://www.nuget.org/packages/TruTimeZones/)
+[![NuGet version (TruTimeZones)](https://img.shields.io/nuget/v/TruTimeZones.svg?style=flat-square)](https://www.nuget.org/packages/TruTimeZones/) <- Not setup yet
 
 TruTimeZones is a popular TimeZone library to resolve Microsoft's glitch in Timezone's during DST.
 It's a very lightweight library to use and comes with a .NET6 demo console.
@@ -429,10 +429,10 @@ IsDaylightSavingTime:
 
 ## Links
 
-- [Homepage](http://www.chizl.com/TruTimeZones)
-- [Documentation](http://www.chizl.com/TruTimeZones/help)
-- [NuGet Package](https://www.nuget.org/packages/TruTimeZones)
-- [Release Notes](https://github.com/gavin1970/TruTimeZones/releases)
-- [Contributing Guidelines](https://github.com/gavin1970/TruTimeZones/blob/master/CONTRIBUTING.md)
+- [Homepage]<!--(http://www.chizl.com/TruTimeZones)-->
+- [Documentation]<!--(http://www.chizl.com/TruTimeZones/help)-->
+- [NuGet Package]<!--(https://www.nuget.org/packages/TruTimeZones)-->
+- [Release Notes]<!--(https://github.com/gavin1970/TruTimeZones/releases)-->
+- [Contributing Guidelines]<!--(https://github.com/gavin1970/TruTimeZones/blob/master/CONTRIBUTING.md)-->
 - [License](https://github.com/gavin1970/TruTimeZones/blob/master/LICENSE.md)
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/TruTimeZones)
