@@ -1,4 +1,4 @@
-# ![Logo1](https://github.com/gavin1970/TruTimeZones/blob/develop/imgs/WindowsIssue01.png)
+# ![Logo1](https://github.com/gavin1970/TruTimeZones/blob/master/imgs/WindowsIssue01.png)
 # TruTimeZones
 
 [![NuGet version (TruTimeZones)](https://img.shields.io/nuget/v/TruTimeZones.svg?style=flat-square)](https://www.nuget.org/packages/TruTimeZones/) <- Not setup yet
