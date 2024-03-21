@@ -14,9 +14,9 @@
         <Copyright>© 2023 chizl.com</Copyright>
         <PackageIcon>TruTimeZones.ico</PackageIcon>
         <PackageTags>timezone-viewer</PackageTags>
-        <FileVersion>23.11.19.2148</FileVersion>
-        <AssemblyVersion>23.11.0.0</AssemblyVersion>
-				<Version>23.11.19.0</Version>
+        <FileVersion>24.03.21.0020</FileVersion>
+        <AssemblyVersion>24.03.0.0</AssemblyVersion>
+				<Version>24.03.21.0</Version>
         <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     </PropertyGroup>
 

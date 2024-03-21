@@ -90,8 +90,12 @@ namespace TruTimeZones
         /// </returns>
         public static TruTimeZone CurrentTimeZone()
         {
+            //WorldTimeZones.CreateWorldTimeZones("C:\\Code\\world_timezones_s.txt");
             TimeZoneInfo tzi = TimeZoneInfo.FindSystemTimeZoneById(TimeZoneInfo.Local.Id);
-            return GetTimeZones().First(f => f.Id == tzi.Id);
+            if(WorldTimeZones.IsDST)
+                return GetTimeZones().First(f => f.DaylightName == tzi.DaylightName);
+            else
+                return GetTimeZones().First(f => f.StandardName == tzi.StandardName);
         }
 
         /// <summary>

@@ -45,7 +45,7 @@ namespace TruTimeZones
         /// DST changes for all zones at the same time as long as they 
         /// support DST, so pulling DST from local will be the same for all TimeZones.
         /// </summary>
-        private static bool IsDST
+        internal static bool IsDST
         {
             get
             {
